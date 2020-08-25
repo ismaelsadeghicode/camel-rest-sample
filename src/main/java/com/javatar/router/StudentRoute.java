@@ -1,4 +1,4 @@
-package com.javatar.route;
+package com.javatar.router;
 
 import com.javatar.data.Student;
 import org.apache.camel.Exchange;
@@ -23,10 +23,10 @@ public class StudentRoute extends RouteBuilder {
                 .component("servlet")
                 .bindingMode(RestBindingMode.json);
 
-        rest("/api/people")
-                .get()
-                .route()
-                .setBody(constant("ali, hasan, hosain")); //http://localhost:8080/api/people
+//        rest("/api/people")
+//                .get()
+//                .route()
+//                .setBody(constant("ali, hasan, hosain")); //http://localhost:8080/api/people
 
         rest("/student").produces("application/json")
                 .get("/hello/{name}") // http://localhost:8080/student/hello/ali
