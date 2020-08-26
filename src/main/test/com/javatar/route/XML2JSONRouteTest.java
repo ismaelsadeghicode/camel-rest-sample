@@ -1,4 +1,4 @@
-package com.javatar.router;
+package com.javatar.route;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;

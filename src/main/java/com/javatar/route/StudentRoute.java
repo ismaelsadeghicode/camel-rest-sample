@@ -1,4 +1,4 @@
-package com.javatar.router;
+package com.javatar.route;
 
 import com.javatar.data.Student;
 import org.apache.camel.Exchange;
